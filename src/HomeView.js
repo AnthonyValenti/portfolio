@@ -37,15 +37,15 @@ const HomeView = () =>{
                 <div class="layer2-light"></div>
                 <div class="layer2-light light-right"></div>
                 <div class="screen">
-                    <img src={wallpaper} id="background"/>
+                    <img alt="skills" src={wallpaper} id="background"/>
                     <div class="transition"></div>
                     <div class="icon-container">
                       <div class="app-icon" style={{backgroundColor: "red"}}>
-                        <img class="app-icon" src={skillsImage}  onClick={()=> openApp("Skills","red")} />
+                        <img class="app-icon" alt="skills" src={skillsImage}  onClick={()=> openApp("Skills","red")} />
                         Skills
                       </div>
                       <div class="app-icon">
-                      <img class="app-icon" src={skillsImage}  onClick={()=> openApp("Test","lightblue")} />
+                      <img class="app-icon" alt="skills" src={skillsImage}  onClick={()=> openApp("Test","lightblue")} />
                         test
                       </div>
                       <div class="app-icon"></div>
@@ -78,7 +78,7 @@ const HomeView = () =>{
                       <div class="app-icon"></div>
                       <div class="app-icon"></div>
                     </div>
-                    <img src={dock} id="dock"/>
+                    <img alt="skills" src={dock} id="dock"/>
                     <div class="homebar"></div>
                     <div class="mask">
                         <div class="speaker"></div>

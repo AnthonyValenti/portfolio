@@ -38,7 +38,7 @@ const AppView = (props) =>{
                         <h1>{props.title}</h1>
                         <ul>{dataItems}</ul>
                     </div>
-                    <img class="transition2" src={wallpaper} />
+                    <img alt="wallpaper" class="transition2" src={wallpaper} />
                     <div class="mask">
                         <div class="speaker"></div>
                         <div class="camera">
