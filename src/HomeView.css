@@ -9,7 +9,7 @@ body{
   height: 664.4px;
   background: white;
   margin-left: 50%;
-  margin-top: 35%;
+  margin-top: 35% ;
   transform: translate(-50%, -50%);
   border-radius: 48.6px;
   -moz-box-shadow:    inset 0 0 12px #494949;
@@ -97,12 +97,11 @@ body{
 }
 
 .screen{
-  background: white;
   width: 286.6px;
   height: 631.4px;
-  margin-left: 50%;
-  margin-top: 50%;
-  transform: translate(-50%, 9px);
+  margin-left: 50% !important;
+  margin-top: 50% !important;
+  transform: translate(-50%, 9px) !important;
   border-radius: 38.6px;
 }
 
@@ -229,12 +228,18 @@ body{
   text-align: center;
   font-weight: bolder;
   font-size: 12px;
+  object-fit: cover;
   
 }
 .app-icon img{
-  height: 95%;
-  width: 95%;
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
 }
+#github{
+  background-color: white;
+}
+
 
 
 

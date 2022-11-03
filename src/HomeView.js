@@ -2,6 +2,11 @@ import React from "react";
 import "./HomeView.css"
 import wallpaper from './images/wallpaper.png';
 import skillsImage from './images/skills.png';
+import workingImage from './images/working.png';
+import contactImage from './images/contact.png';
+import schoolImage from './images/education.png';
+import githubImage from './images/github.png';
+import linkedinImage from './images/linkedin.png';
 import dock from './images/dock.png';
 import { useNavigate } from "react-router-dom";
 
@@ -17,9 +22,14 @@ const HomeView = () =>{
         box.style.setProperty("background",color);
         box.className = "startTransition";
         document.getElementById("dock").style.visibility="hidden";
-        document.getElementsByClassName("icon-container")[0].style.visibility="hidden";
-        setTimeout(()=> {navigate(`/${endpoint}`);},1000);
+        const collection = document.getElementsByClassName("icon-container");
+        for (let i = 0; i < collection.length; i++) {
+          collection[i].style.visibility = "hidden";
+        }        setTimeout(()=> {navigate(`/${endpoint}`);},1000);
     }
+    function openInNewTab (url) {
+      window.open(url, '_blank', 'noopener,noreferrer');
+    };
 
     return(
         
@@ -40,21 +50,39 @@ const HomeView = () =>{
                     <img alt="skills" src={wallpaper} id="background"/>
                     <div class="transition"></div>
                     <div class="icon-container">
-                      <div class="app-icon" style={{backgroundColor: "red"}}>
-                        <img class="app-icon" alt="skills" src={skillsImage}  onClick={()=> openApp("Skills","red")} />
+                      <div class="app-icon" style={{backgroundColor: "lightcoral"}}>
+                        <img class="app-icon" alt="skills" src={skillsImage}  onClick={()=> openApp("Skills","lightcoral")} />
                         Skills
                       </div>
-                      <div class="app-icon">
-                      <img class="app-icon" alt="skills" src={skillsImage}  onClick={()=> openApp("Test","lightblue")} />
-                        test
+
+                      <div class="app-icon" style={{backgroundColor: "lightblue"}}>
+                      <img class="app-icon" alt="exp" src={workingImage}  onClick={()=> openApp("Experience","rgb(60,78,152)")} />
+                        Work
                       </div>
-                      <div class="app-icon"></div>
-                      <div class="app-icon"></div>
+
+                      <div class="app-icon" style={{backgroundColor: "rgb(27,49,47)"}}>
+                      <img class="app-icon" alt="contact" src={contactImage}  onClick={()=> openApp("Contact","rgb(27,49,47)")} />
+                        Contact
+                      </div>
+
+                      <div class="app-icon" style={{backgroundColor: "rgb(230,88,20)"}}>
+                      <img class="app-icon" alt="contact" src={schoolImage}  onClick={()=> openApp("Education","rgb(230,88,20)")} />
+                        School
+                      </div>
                     </div>  
 
-                    <div class="icon-container">
-                      <div class="app-icon"></div>
-                      <div class="app-icon"></div>
+                    <div class="icon-container" >
+              
+                      <div class="app-icon" >
+                        <img class="app-icon" id="github" alt="github" src={githubImage} onClick={()=> openInNewTab("https://github.com/AnthonyValenti")} />
+                          GitHub
+                      </div>
+
+                      <div class="app-icon">
+                      <img class="app-icon" alt="linkedin" src={linkedinImage} onClick={()=> openInNewTab("https://www.linkedin.com/in/anthonyvalenti2001/")} />
+                          LinkedIn
+                      </div>
+
                       <div class="app-icon"></div>
                       <div class="app-icon"></div>
                     </div>

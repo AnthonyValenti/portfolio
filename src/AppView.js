@@ -15,7 +15,7 @@ const AppView = (props) =>{
         box.style.setProperty("top", box.offsetTop + "px");
         box.style.setProperty("position", "absolute");
         box.className = "startTransition2";
-        setTimeout(()=> {navigate("/");},500);
+        setTimeout(()=> {navigate("/");},1000);
     }
 
     const dataItems = props.data.map(item => <li>{item}</li>);
@@ -33,8 +33,9 @@ const AppView = (props) =>{
             <div class="layer2">
                 <div class="layer2-light"></div>
                 <div class="layer2-light light-right"></div>
-                <div class="screen">
-                    <div class="app-content" style={{backgroundColor: `${props.color}`}}>
+                <div class="screen2">
+                    <img alt="wallpaper" src={props.background} id="background"/>
+                    <div class="app-content" >
                         <h1>{props.title}</h1>
                         <ul>{dataItems}</ul>
                     </div>
