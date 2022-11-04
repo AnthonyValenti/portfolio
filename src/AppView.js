@@ -32,7 +32,7 @@ const AppView = (props) =>{
             <div class="layer2">
                 <div class="layer2-light"></div>
                 <div class="layer2-light light-right"></div>
-                <div class="screen2">
+                <div class="screen">
                     <img alt="wallpaper" src={props.background} id="background"/>
                     <div class="app-content" >
                         <h1>{props.title}</h1>

@@ -44,6 +44,7 @@ const HomeView = () =>{
             <div class="stripe top"></div>
             <div class="stripe bottom"></div>
             <div class="port"></div>
+            
             <div class="layer2">
                 <div class="layer2-light"></div>
                 <div class="layer2-light light-right"></div>
