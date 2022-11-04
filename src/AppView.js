@@ -20,6 +20,9 @@ const AppView = (props) =>{
 
     const dataItems = props.data.map(item => <li>{item}</li>);
     return(
+        <div>
+        <h1 className="title">Welcome to Anthony's Porfolio!</h1>
+        <h2 className="subtitle"> Scroll thorugh my phone to learn more about me</h2>
             <div class="frame-base">
             <div class="frame-base-light"></div>
             <div class="side-button mute"></div>
@@ -50,6 +53,7 @@ const AppView = (props) =>{
 
                 </div>
             </div>
+        </div>
         </div>   
     );
 };
