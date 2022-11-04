@@ -7,6 +7,8 @@ import contactImage from './images/contact.png';
 import schoolImage from './images/education.png';
 import githubImage from './images/github.png';
 import linkedinImage from './images/linkedin.png';
+import projectImage1 from './images/ice-hockey.png';
+import projectImage2 from './images/python.png';
 import dock from './images/dock.png';
 import { useNavigate } from "react-router-dom";
 
@@ -33,7 +35,6 @@ const HomeView = () =>{
 
     return(
         
-        <body>
         <div class="frame-base">
             <div class="frame-base-light"></div>
             <div class="side-button mute"></div>
@@ -83,8 +84,15 @@ const HomeView = () =>{
                           LinkedIn
                       </div>
 
-                      <div class="app-icon"></div>
-                      <div class="app-icon"></div>
+                      <div class="app-icon">
+                      <img class="app-icon" id="project1Image" alt="project1" src={projectImage1} onClick={()=> openInNewTab("https://puckenanalysis.netlify.app")} />
+                          Project 1
+                      </div>
+
+                      <div class="app-icon">
+                      <img class="app-icon" id="project2Image" alt="project2" src={projectImage2} onClick={()=> openApp("iMessageWrapped","grey")} />
+                          Project 2
+                      </div>
                     </div>
 
                     <div class="icon-container">
@@ -120,7 +128,6 @@ const HomeView = () =>{
 
             </div>
         </div>
-        </body>
     );
 };
 

@@ -5,6 +5,8 @@ import redBackground from "./images/red-background.jpg"
 import blueBackground from "./images/blue-background.jpg"
 import greenBackground from "./images/green-background.jpg"
 import orangeBackground from "./images/orange-background.jpg"
+import testGif from "./images/test.gif"
+
 
 
 
@@ -34,6 +36,8 @@ function App() {
       <Route path="/Experience" element={<AppView title="Experience" background={blueBackground} data={workExperience}/>} />
       <Route path="/Contact" element={<AppView title="Contact Me" background={greenBackground} data={contact}/>} />
       <Route path="/Education" element={<AppView title="Education" background={orangeBackground} data={education}/>} />
+      <Route path="/iMessageWrapped" element={<AppView title="iMessageWrapped" background={orangeBackground} data={education}/>} />
+
 
     </Routes>
   </Router>

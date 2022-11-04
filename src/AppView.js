@@ -20,7 +20,6 @@ const AppView = (props) =>{
 
     const dataItems = props.data.map(item => <li>{item}</li>);
     return(
-        <body>
             <div class="frame-base">
             <div class="frame-base-light"></div>
             <div class="side-button mute"></div>
@@ -51,9 +50,7 @@ const AppView = (props) =>{
 
                 </div>
             </div>
-        </div>
-        </body>
-   
+        </div>   
     );
 };
 
