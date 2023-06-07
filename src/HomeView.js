@@ -3,8 +3,12 @@ import "./HomeView.css"
 import wallpaper from './images/wallpaper.png';
 import skillsImage from './images/skills.png';
 import workingImage from './images/working.png';
+import capstoneImage from './images/capstone.png';
+import pythonImage from './images/python.png';
+
 import contactImage from './images/contact.png';
 import schoolImage from './images/education.png';
+import wgcImage from './images/wgc.png';
 import githubImage from './images/github.png';
 import linkedinImage from './images/linkedin.png';
 import projectImage1 from './images/ice-hockey.png';
@@ -88,16 +92,26 @@ const HomeView = () =>{
 
                       <div class="app-icon">
                       <img class="app-icon" id="project1Image" alt="project1" src={projectImage1} onClick={()=> openInNewTab("https://puckenanalysis.netlify.app")} />
-                          Project 1
+                          NHL War
                       </div>
 
                       <div class="app-icon">
+                      <img class="app-icon" id="wgcImage" alt="project1" src={wgcImage} onClick={()=> openInNewTab("https://woodhillplantindex.netlify.app")} />
+                          Plants
                       </div>
                     </div>
 
                     <div class="icon-container">
-                      <div class="app-icon"></div>
-                      <div class="app-icon"></div>
+                      <div class="app-icon">
+                        <img class="app-icon" id="capstoneImage" alt="project1" src={capstoneImage} onClick={()=> openInNewTab("https://github.com/AnthonyValenti/Capstone_MobileApp")} />
+                        Capstone
+
+                      </div>
+                      <div class="app-icon">
+                        <img class="app-icon" id="pythonImage" alt="project1" src={pythonImage} onClick={()=> openInNewTab("https://github.com/AnthonyValenti/IMessageWrappedPython")} />
+                        Wrapped
+
+                      </div>
                       <div class="app-icon"></div>
                       <div class="app-icon"></div>
                     </div>

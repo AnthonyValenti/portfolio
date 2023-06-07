@@ -10,12 +10,11 @@ import orangeBackground from "./images/orange-background.jpg"
 
 
 const skills= ["Java","Javascript (React/Node)","Python","C","Flutter","SQL","HTML/CSS","Docker/Kubernetes/Git"];
-const workExperience= ["Android Developer @ Arbortronics Control Systems","Deployed java code on Android OS card payment machines to be implemented across Canada",
-"Created an interactive menu on touchscreen payment machines attached to vending machines",
-"Tested and deployed software updates to card payment machines"
+const workExperience= ["Android Developer @ Arbortronics Control Systems","Developed JUnit Test cases for point of sale terminals ensuring valid payment processing",
+"Designed and implemented an interactive menu in Java for AndroidOS vending payment terminals", "Project Manager @ Woodhill Garden Centre","Successfully planned and managed all aspects of landscaping projects across the GTA, simultaneously managing 2-3 crews consisting of 5-8 crew-members"
 ];
 const contact= ["Phone: 647-633-2626","Email: anthonyvalenti12@icloud.com","LinkedIn: https://www.linkedin.com/in/anthonyvalenti2001"];
-const education= ["Toronto Metropolitan University","Graduating Spring 2023","Relevant Courses: ","Data Structures & Algos",
+const education= ["Toronto Metropolitan University","BEng Computer Engineering Class of 2023 ","Relevant Courses: ","Data Structures & Algos",
 "Software Design & Testing",
 "Data Engineering",
 "Machine Learning",
