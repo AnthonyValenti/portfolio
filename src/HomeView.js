@@ -5,7 +5,7 @@ import skillsImage from './images/skills.png';
 import workingImage from './images/working.png';
 import capstoneImage from './images/capstone.png';
 import pythonImage from './images/python.png';
-
+import javaImage from './images/java.png';
 import contactImage from './images/contact.png';
 import schoolImage from './images/education.png';
 import wgcImage from './images/wgc.png';
@@ -112,7 +112,10 @@ const HomeView = () =>{
                         Wrapped
 
                       </div>
-                      <div class="app-icon"></div>
+                      <div class="app-icon">
+                      <img class="app-icon" id="javaImage" alt="project1" src={javaImage} onClick={()=> openInNewTab("https://github.com/AnthonyValenti/Java-WebApplication-Project")} />
+                       Web App
+                      </div>
                       <div class="app-icon"></div>
                     </div>
 
