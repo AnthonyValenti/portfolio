@@ -12,6 +12,9 @@ import wgcImage from './images/wgc.png';
 import githubImage from './images/github.png';
 import linkedinImage from './images/linkedin.png';
 import projectImage1 from './images/ice-hockey.png';
+import mlModelImg from './images/mlModelmage.png';
+import hockeyStick from './images/hockey-stick.png';
+
 import dock from './images/dock.png';
 import { useNavigate } from "react-router-dom";
 
@@ -39,7 +42,7 @@ const HomeView = () =>{
     return(
       <div>
         <h1 className="title">Welcome to Anthony's Porfolio!</h1>
-        <h2 className="subtitle"> Scroll thorugh my phone to learn more about me</h2>
+        <h2 className="subtitle"> Click on the apps to learn more</h2>
         <div class="frame-base">
             <div class="frame-base-light"></div>
             <div class="side-button mute"></div>
@@ -116,11 +119,18 @@ const HomeView = () =>{
                       <img class="app-icon" id="javaImage" alt="project1" src={javaImage} onClick={()=> openInNewTab("https://github.com/AnthonyValenti/Java-WebApplication-Project")} />
                        Web App
                       </div>
-                      <div class="app-icon"></div>
+                      <div class="app-icon">
+                      <img class="app-icon" id="mlModelImg" alt="mlModelImg" src={mlModelImg} onClick={()=> openInNewTab("https://github.com/AnthonyValenti/GoalsModel")} />
+                        xGoals
+                      </div>
                     </div>
 
                     <div class="icon-container">
-                      <div class="app-icon"></div>
+                      <div class="app-icon">
+                      <img class="app-icon" id="hockeyStick" alt="hockeyStick" src={hockeyStick} onClick={()=> openInNewTab("https://teammategrids.netlify.app/")} />
+                        NHL Game
+
+                      </div>
                       <div class="app-icon"></div>
                       <div class="app-icon"></div>
                       <div class="app-icon"></div>
